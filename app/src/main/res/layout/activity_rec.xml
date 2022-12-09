@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_02"
+    tools:context=".RecActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/InStream"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Hasil Rekomendasi"
+                android:gravity="center"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@color/card_bg"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="15dp">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/home_button"
+                    android:gravity="left"
+                    android:text="1. Sains Data"
+                    android:textSize="10sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/home_button"
+                    android:gravity="left"
+                    android:text="2. Komputasi Cerdas"
+                    android:textSize="10sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/home_button"
+                    android:gravity="left"
+                    android:text="3. Rekayasa Jaringan"
+                    android:textSize="10sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/home_button"
+                    android:gravity="left"
+                    android:text="4. Keamanan Siber"
+                    android:textSize="10sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/home_button"
+                    android:gravity="left"
+                    android:text="5. Full Stack"
+                    android:textSize="10sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/home_button"
+                    android:gravity="left"
+                    android:text="6. Media Interaktif"
+                    android:textSize="10sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_hm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/home_button"
+                    android:gravity="center"
+                    android:text="Home"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_stm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/home_button"
+                    android:gravity="center"
+                    android:text="Stream"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

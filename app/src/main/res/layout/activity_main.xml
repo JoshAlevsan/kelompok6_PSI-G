@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_01"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/bg_main"
+        android:scaleType="fitCenter"
+        android:elevation="5dp"/>
+
+    <TextView
+        android:id="@+id/InStream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="InStream"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/card_bg"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/white"
+        app:cardElevation="5dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <Button
+                android:id="@+id/btn_ksn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="7dp"
+                android:backgroundTint="@color/home_button"
+                android:gravity="center"
+                android:text="Mulai Kuesioner"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/btn_stm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/home_button"
+                android:gravity="center"
+                android:text="Periksa Stream"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/btn_pcb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/home_button"
+                android:gravity="center"
+                android:text="Hapus Percobaan"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

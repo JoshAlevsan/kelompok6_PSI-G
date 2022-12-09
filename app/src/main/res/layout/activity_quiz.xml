@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3CF398"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+        
+    <TextView
+        android:id="@+id/tv_qst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="#039AD3"
+        android:textSize="25dp"
+        tools:text="This Is A Test Question?" />
+
+    <LinearLayout
+        android:id="@+id/pgr_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            style="@style/theProgressBar"
+            android:id="@+id/pgr_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="12"
+            android:minHeight="50dp"
+            android:progress="0"
+            android:indeterminate="false"/>
+        <TextView
+            android:id="@+id/tv_pgr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:textColor="@color/answer_pgr"
+            android:textSize="14sp"
+            tools:text="0/12"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/default_option_border_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#676968"
+        android:textSize="18sp"
+        android:text="Ya"/>
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/default_option_border_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#676968"
+        android:textSize="18sp"
+        android:text="Tidak"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/home_button"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/home_button"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Next"/>
+    </LinearLayout>
+    
+</LinearLayout>
